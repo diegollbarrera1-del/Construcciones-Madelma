@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Construcciones Madelma</title>
+
+    <!-- ESTILOS (CSS) -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .servicio {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Construcciones Madelma</h1>
+        <p>Servicios de construcción y remodelación</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>Somos expertos en construcción, remodelaciones y mantenimiento.</p>
+        <img src="https://via.placeholder.com/400" alt="Construcción">
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+
+        <div class="servicio">
+            <h3>Construcción</h3>
+            <p>Casas, edificios y obras.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Remodelación</h3>
+            <p>Mejoramos tu hogar o negocio.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Mantenimiento</h3>
+            <p>Reparaciones y servicios generales.</p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: 123 456 789</p>
+
+        <a class="btn" href="https://wa.me/123456789" target="_blank">
+            Escríbenos por WhatsApp
+        </a>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Construcciones Madelma</p>
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcciones Madelma | Expertos en Obra Gruesa y Terminaciones</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-color: #0d47a1; /* Azul corporativo */
+            --secondary-color: #ff6f00; /* Naranja para resaltar */
+        }
+
+        body { font-family: 'Roboto', sans-serif; color: #333; }
+        h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .service-card {
+            border: none;
+            border-bottom: 4px solid var(--primary-color);
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover { transform: translateY(-5px); }
+        
+        .icon-box { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem; }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-weight: bold;
+        }
+        
+        .btn-whatsapp:hover { background-color: #128c7e; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MADELMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Construcciones Madelma</h1>
+            <p class="lead fs-3 mb-4">Especialistas en Obra Gruesa, Terminaciones y Ventanería</p>
+            <a href="#contacto" class="btn btn-primary btn-lg px-5">Cotiza tu Obra</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestros Servicios Profesionales</h2>
+                <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4">
+                        <div class="icon-box"><i class="bi bi-bricks"></i></div>
+                        <h3>Obra Gruesa</h3>
+                        <p>Cimentación, muros estructurales y techumbres con los más altos estándares de seguridad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4">
+                        <div class="icon-box"><i class="bi bi-paint-bucket"></i></div>
+                        <h3>Terminaciones</h3>
+                        <p>Detalles finos, pintura y revestimientos que transforman espacios en hogares.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4">
+                        <div class="icon-box"><i class="bi bi-window"></i></div>
+                        <h3>Ventanería</h3>
+                        <p>Instalación de ventanería técnica para asegurar aislamiento térmico y acústico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold mb-4">¿Listo para comenzar tu proyecto?</h2>
+                    <p class="mb-5">Contáctanos hoy mismo para obtener un presupuesto detallado y asesoría técnica.</p>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <a href="https://wa.me/56900000000" class="btn btn-whatsapp btn-lg">
+                            <i class="bi bi-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="mailto:contacto@madelma.cl" class="btn btn-outline-dark btn-lg">
+                            <i class="bi bi-envelope"></i> Enviar Correo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Construcciones Madelma - Calidad y Confianza.</p>
+            <p><small>Chile | Ingeniería y Construcción</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
