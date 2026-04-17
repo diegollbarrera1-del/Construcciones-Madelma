@@ -15,7 +15,16 @@
         
         /* Navbar */
         .navbar { background-color: rgba(26, 26, 26, 0.98) !important; padding: 15px 0; border-bottom: 3px solid var(--accent-gold); }
-        .navbar-brand img { filter: brightness(1); } /* Asegura que el logo dorado resalte */
+        
+        /* ESTILO DORADO PARA EL NOMBRE MADELMA */
+        .navbar-brand { 
+            font-weight: 700; 
+            letter-spacing: 4px; 
+            color: var(--accent-gold) !important; 
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
         .nav-link { font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; color: rgba(255,255,255,0.8) !important; }
         .nav-link:hover { color: var(--accent-gold) !important; }
 
@@ -35,7 +44,7 @@
         .section-title { font-weight: 700; font-size: 2.5rem; position: relative; padding-bottom: 20px; margin-bottom: 60px; }
         .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background-color: var(--accent-gold); }
 
-        /* Tarjetas de Servicio - ESTILO MEJORADO */
+        /* Tarjetas de Servicio */
         .service-card { border: 1px solid #eee; transition: all 0.4s ease; padding: 50px 30px; border-radius: 4px; background-color: #fff; position: relative; overflow: hidden; }
         .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); border-color: var(--accent-gold); }
         .service-card i { font-size: 3.5rem; color: var(--accent-gold); margin-bottom: 25px; display: inline-block; }
@@ -58,7 +67,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-           <a class="navbar-brand" href="#">MADELMA</a>
+            <a class="navbar-brand" href="#">MADELMA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -108,7 +117,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card h-100">
                         <i class="bi bi-buildings"></i>
-                        <h3>Obra Gruesa Structural</h3>
+                        <h3>Obra Gruesa Estructural</h3>
                         <p class="small text-muted mb-4">Cimientos y estructura portante para edificaciones duraderas.</p>
                         <ul class="service-list">
                             <li>Excavaciones y movimiento de tierra.</li>
@@ -155,7 +164,6 @@
 
     <section id="contacto" class="py-5 bg-contacto text-center">
         <div class="container py-5">
-            <p class="accent-text mb-2">GESTIONE SU PRESUPUESTO</p>
             <h2 class="fw-bold mb-5 display-4 text-white">Inicie su proyecto con <br>respaldo de ingeniería</h2>
             <p class="lead text-light mb-5 px-lg-5">Contáctenos para coordinar una visita técnica o enviar sus planos. Evaluamos su proyecto comercial o habitacional en Santiago.</p>
             <a href="https://wa.me/56962107862" class="btn btn-gold btn-lg d-inline-flex align-items-center gap-3">
